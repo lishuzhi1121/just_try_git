@@ -7,6 +7,11 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <view class='swiperview'>
+    <button bindtap='bindSwiperTap' class='swiper-button'>点我去看轮播图</button>
+  </view>
+  
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

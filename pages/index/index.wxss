@@ -16,6 +16,11 @@
   color: #aaa;
 }
 
+.swiperview {
+  margin-top: 50rpx;
+  color: #777;
+}
+
 .usermotto {
   margin-top: 200px;
 }
