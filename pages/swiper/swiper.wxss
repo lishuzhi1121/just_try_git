@@ -3,32 +3,37 @@
 .swiper-container{
    position: relative; 
 }
-.swiper-container .swiper{
+
+.swiper{
   height: 400rpx;
 }
-.swiper-container .swiper .img{
+
+.swiper-image{
   width: 100%;
   height: 100%;
 }
 
-.swiper-container .dots{
+.dots-view{
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 20rpx;
+  left: 0;  
+  right: 0; 
+  bottom: 10rpx;
   display: flex;
   justify-content: center;
 }
-.swiper-container .dots .dot{
-  margin: 0 8rpx;
-  width: 14rpx;
-  height: 14rpx;
+
+.dot{
+  margin: 0 10rpx; 
+  width: 40rpx;
+  height: 40rpx;
   background: #fff;
-  border-radius: 8rpx;
-  transition: all .6s;
+  border-radius: 50%;
+  transition: all .5s;
+  font: normal normal normal 80%/130% normal;
+  text-align: center;
 }
-.swiper-container .dots .dot.active{
-  width: 24rpx;
+.dot.active{
   background: #f80;
+  color: #fff; 
 }
 

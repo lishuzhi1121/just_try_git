@@ -1,17 +1,17 @@
 <!--swiper.wxml-->
 
 <view class="swiper-container">
-    <swiper class='swiper' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' current='{{swiperCurrent}}' bindchange="swiperChange">
+    <swiper class='swiper' autoplay='{{autoplay}}' indicator-dots='{{indicatorDots}}' interval='{{interval}}' duration='{{duration}}' current='{{swiperCurrent}}' bindchange="swiperChange">
     <block wx:for="{{slider}}" wx:key="unique">
       <swiper-item>
-        <image src="{{item.picUrl}}" class="image"></image>
+        <image src="{{item}}" class="swiper-image"></image>
       </swiper-item>
     </block>
   </swiper>
   
-  <view class="dots">
+    <view class="dots-view">
     <block wx:for="{{slider}}" wx:key="unique">
-      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}" bindtap='dotsEvent' id='{{index}}'>{{index+1}}</view>
     </block>
-  </view>
+  </view>  
 </view>
